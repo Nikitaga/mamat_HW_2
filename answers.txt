@@ -1,0 +1,15 @@
+Question A:
+Using Ctrl+f, and considering the csv upkeep, it would take at max efficience ~1 minute per page. So at best - 3 hours.
+
+Question B:
+That an extremely simple script can automize maby mechanical and monotonous jobs.
+Some (but definitely not all) other uses of a similar script could be:
+1) If you require a set list of action for every new Work-Area/assignment/project you open, you can automize them with a script so you never have to suffer through them again.
+2) Automizing any number of unit tests.
+3) Synchronizing and combining input+output of several programs.
+
+Question C:
+The operating system is time-aware, so I would add a condition to re-run the sctipt every hour and constantly run the script in the background. We could even create a saparate file for every such run with its relevant time in the name.
+To omit articles we already checked, we can compare the urls we extract with the urls from the previous output file and ignore those that alread exist. There are numerous ways to improve this idea's efficiency and limit the number of comparisons*
+
+*One way is comparing every url in the site to the most recent one in the old file, and stopping the loop upon reaching it - limiting the number of comparison to the number of articles in the page. The reason this isn't our main answer is because it assumes that we can extract the urls in the order of their publishing time without complicating the script too much, which we need to confirm first.
